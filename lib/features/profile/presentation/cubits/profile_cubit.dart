@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:social_media/features/profile/domain/repos/profile_repo.dart';
 import 'package:social_media/features/profile/presentation/cubits/profile_states.dart';
 
-class ProfileCubit extends Cubit<ProfileStates> {
+class ProfileCubit extends Cubit<ProfileState> {
   final ProfileRepo profileRepo;
 
   ProfileCubit({required this.profileRepo}) : super(ProfileInitial());
